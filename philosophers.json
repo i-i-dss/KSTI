@@ -1,0 +1,18 @@
+{
+    "RIOS": { "name": "플라톤", "description": "이성적이고 내향적인 철학자입니다." },
+    "RIOP": { "name": "아리스토텔레스", "description": "논리와 현실을 중시한 체계적인 철학자입니다." },
+    "RIUS": { "name": "데카르트", "description": "생각하는 존재로서 자아를 탐구한 철학자입니다." },
+    "RIUP": { "name": "칸트", "description": "도덕과 이성의 균형을 강조한 철학자입니다." },
+    "REOS": { "name": "스피노자", "description": "이성과 감정의 조화를 추구한 철학자입니다." },
+    "REOP": { "name": "흄", "description": "경험과 감각을 중요시한 경험론 철학자입니다." },
+    "REUS": { "name": "버클리", "description": "존재는 지각된다는 관념론 철학자입니다." },
+    "REUP": { "name": "존 스튜어트 밀", "description": "공리주의를 대표하는 실용주의 철학자입니다." },
+    "EIOS": { "name": "쇼펜하우어", "description": "비관적 세계관과 의지를 중시한 철학자입니다." },
+    "EIOP": { "name": "비트겐슈타인", "description": "언어와 논리의 한계를 탐구한 철학자입니다." },
+    "EIUS": { "name": "하이데거", "description": "존재의 의미를 탐구한 실존주의 철학자입니다." },
+    "EIUP": { "name": "야스퍼스", "description": "인간 실존과 한계를 성찰한 철학자입니다." },
+    "EAOS": { "name": "루소", "description": "자연과 인간 본성의 회복을 주장한 철학자입니다." },
+    "EAOP": { "name": "니체", "description": "도덕의 전복과 자기 극복을 말한 철학자입니다." },
+    "EAUS": { "name": "카뮈", "description": "부조리와 삶의 의미를 성찰한 철학자입니다." },
+    "EAUP": { "name": "장 폴 사르트르", "description": "자유와 책임을 강조한 실존주의 철학자입니다." }
+  }
