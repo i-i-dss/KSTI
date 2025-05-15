@@ -52,25 +52,24 @@
       EAUP: { name: "데리다", description: "현실 속 모순과 해체를 통해 진리와 의미를 새롭게 보는 철학자입니다." }
     };
 
-    let currentPage = 0;
-    const questionsPerPage = 10;
+    // Store answers globally
+    const answers = {};
 
     function calculateResult() {
       const scores = { R: 0, E: 0, I: 0, A: 0, O: 0, U: 0, S: 0, P: 0 };
       for (let i = 0; i < questions.length; i++) {
-        const selected = document.querySelector(`input[name='q${i}']:checked`);
-        if (!selected) {
+        const value = answers[i];
+        if (value === undefined) {
           alert(`${i + 1}번 질문에 응답해주세요.`);
-          document.querySelector(`input[name='q${i}']`).scrollIntoView({ behavior: "smooth" });
+          document.querySelector(`input[name='q${i}']`)?.scrollIntoView({ behavior: "smooth" });
           return;
         }
-        const value = parseInt(selected.value);
         const axis = questions[i].axis;
-        if (value >= 2) {
-          scores[axis] += 1;
+        if (parseInt(value) >= 2) {
+          scores[axis]++;
         } else {
           const oppositeAxis = { R: "E", E: "R", I: "A", A: "I", O: "U", U: "O", S: "P", P: "S" };
-          scores[oppositeAxis[axis]] += 1;
+          scores[oppositeAxis[axis]]++;
         }
       }
 
@@ -91,6 +90,9 @@
       resultEl.scrollIntoView({ behavior: "smooth" });
     }
 
+    let currentPage = 0;
+    const questionsPerPage = 10;
+
     function renderQuestions() {
       const container = document.getElementById("question-container");
       container.innerHTML = "";
@@ -104,10 +106,10 @@
         el.className = "mb-4 p-4 bg-white rounded shadow";
         el.innerHTML = `
           <p class="font-semibold mb-2">${i + 1}. ${q.text}</p>
-          <label class="block"><input type="radio" name="q${i}" value="3" class="mr-2"> 매우 그렇다</label>
-          <label class="block"><input type="radio" name="q${i}" value="2" class="mr-2"> 다소 그렇다</label>
-          <label class="block"><input type="radio" name="q${i}" value="1" class="mr-2"> 다소 아니다</label>
-          <label class="block"><input type="radio" name="q${i}" value="0" class="mr-2"> 매우 아니다</label>
+          <label class="block"><input type="radio" name="q${i}" value="3" ${answers[i] === "3" ? "checked" : ""} onchange="answers[${i}] = '3'" class="mr-2"> 매우 그렇다</label>
+          <label class="block"><input type="radio" name="q${i}" value="2" ${answers[i] === "2" ? "checked" : ""} onchange="answers[${i}] = '2'" class="mr-2"> 다소 그렇다</label>
+          <label class="block"><input type="radio" name="q${i}" value="1" ${answers[i] === "1" ? "checked" : ""} onchange="answers[${i}] = '1'" class="mr-2"> 다소 아니다</label>
+          <label class="block"><input type="radio" name="q${i}" value="0" ${answers[i] === "0" ? "checked" : ""} onchange="answers[${i}] = '0'" class="mr-2"> 매우 아니다</label>
         `;
         container.appendChild(el);
       }
