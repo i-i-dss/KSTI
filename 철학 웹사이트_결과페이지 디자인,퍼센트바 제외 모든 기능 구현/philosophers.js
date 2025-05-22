@@ -2,7 +2,7 @@ const philosophers = {
   RIOT: {
     name: "칸트",
     description: "이성으로 세상의 도덕적 질서를 세우는 완성형 사상가. <br>『순수이성비판』, 『실천이성비판』<br/>“네 의지의 준칙이 언제나 동시에 보편적 입법의 원리가 되도록 행위하라.”<br/>“나는 알기 위해 믿는다。”<br/>",
-    image: "philo_images/kant.jpeg",
+    image: "philoimages/kant.jpeg",
     profile: `
       <p><strong>기본 설명:</strong> RIOT는 순수 이성의 힘으로 세계의 도덕적 질서와 합리적 구조를 완성하려고 합니다. 경험보다는 보편적 원리와 규칙을 신뢰하며, 모든 현상을 엄격한 논리와 체계로 해석합니다. 철학은 도덕법칙과 자유의지를 확립하는 도구입니다.</p>
       <p><strong>철학 성향:</strong><br/>
@@ -18,7 +18,7 @@ const philosophers = {
   RIOP: {
     name: "플라톤",
     description: "현실에 이상을 비추는 체계적 이성주의자. <br>『국가』, 『파이돈』<br/>최선의 국가는 철학자가 다스린다. 진리는 이데아에 있다.",
-    image: "philo_images/plato.jpeg",
+    image: "philoimages/plato.jpeg",
     profile: `
       <p><strong>기본 설명:</strong> RIOP는 이성의 힘으로 이상세계를 꿈꾸며, 현실 세계를 이데아의 그림자로 봅니다. 철학은 영혼의 정화와 국가의 정의 실현을 위한 도구입니다. 논리적 대화와 변증법을 통해 진리를 추구합니다.</p>
       <p><strong>철학 성향:</strong><br/>
@@ -35,7 +35,7 @@ const philosophers = {
   RIUT: {
     name: "헤겔",
     description: "변증법으로 역사를 통찰하는 철학의 거장. <br>『정신현상학』, 『논리학』<br/>이성적인 것은 현실적이고, 현실적인 것은 이성적이다. 정신은 자기 자신을 인식한다.",
-    image: "philo_images/hegel.jpeg",
+    image: "philoimages/hegel.jpeg",
     profile: `
       <p><strong>기본 설명:</strong> RIUT는 모든 현실과 사상을 변증법적으로 통합하는 거대한 체계를 지향합니다. 모순과 대립 속에서 더 높은 통일을 이루려 하며, 역사는 이성의 자기실현 과정으로 봅니다.</p>
       <p><strong>철학 성향:</strong><br/>
@@ -52,7 +52,7 @@ const philosophers = {
   RIUP: {
     name: "키르케고르",
     description: "신앙과 역설 속에서 진리를 찾는 개인주의자.<br>『두려움과 떨림』, 『죽음에 이르는 병』<br/>진리는 나 자신에게 있다. 신앙은 역설이다.",
-    image: "philo_images/kierkegaard.jpeg",
+    image: "philoimages/kierkegaard.jpeg",
     profile: `
       <p><strong>기본 설명:</strong> RIUP는 개인의 주관적 진리와 실존적 결단을 중시합니다. 신앙과 이성, 역설과 모순 속에서 자기 자신으로 살아가려는 실존적 태도를 강조합니다.</p>
       <p><strong>철학 성향:</strong><br/>
@@ -69,7 +69,7 @@ const philosophers = {
   RAOT: {
     name: "스피노자",
     description: "자연과 신을 하나로 잇는 논리적 현실주의자. <br>『에티카』, 『신학정치론』<br/>신은 곧 자연이다. 모든 것은 필연적이다.",
-    image: "philo_images/spinoza.jpeg",
+    image: "philoimages/spinoza.jpeg",
     profile: `
       <p><strong>기본 설명:</strong> RAOT는 자연과 신, 정신과 물질을 논리적으로 통합하며, 모든 존재를 하나의 실재로 봅니다. 감정과 욕망을 이성으로 조율하려 하며, 철학은 인간의 자유와 평화를 위한 논리적 도구입니다.</p>
       <p><strong>철학 성향:</strong><br/>
@@ -86,7 +86,7 @@ const philosophers = {
   RAOP: {
     name: "후기 비트겐슈타인",
     description: "언어 속 진리의 한계를 탐구하는 현실주의 역설가. <br>『철학적 탐구』<br/>언어 게임을 보라. 의미는 사용에서 나온다.",
-    image: "philo_images/later_wittgenstein.jpeg",
+    image: "philoimages/laterwittgenstein.jpeg",
     profile: `
       <p><strong>기본 설명:</strong> RAOP는 언어의 실제 사용과 규칙을 통해 현실의 의미를 파악합니다. 언어의 한계와 모호함, 규칙의 다양성을 인정하며, 철학의 역할은 혼란을 해소하는 데 있다고 봅니다.</p>
       <p><strong>철학 성향:</strong><br/>
@@ -103,7 +103,7 @@ const philosophers = {
   RAUT: {
     name: "데카르트",
     description: "의심으로 존재를 확립하는 근대 철학의 아버지. <br>『성찰』, 『방법서설』<br/>나는 생각한다, 고로 존재한다. 명증성은 진리의 기준이다.",
-    image: "philo_images/descartes.jpeg",
+    image: "philoimages/descartes.jpeg",
     profile: `
       <p><strong>기본 설명:</strong> RAUT는 철저한 의심을 통해 확실한 지식의 기초를 찾으려 합니다. 자기 의식을 출발점으로 삼아, 이성과 논증을 통해 세계를 재구성합니다. 철학은 명증성과 논리적 확실성의 추구입니다.</p>
       <p><strong>철학 성향:</strong><br/>
@@ -120,7 +120,7 @@ const philosophers = {
   RAUP: {
     name: "니체",
     description: "도덕을 넘어 초인을 꿈꾸는 반항적 현실주의자. <br>『차라투스트라』, 『도덕의 계보학』<br/>신은 죽었다. 너 자신이 되어라.",
-    image: "philo_images/nietzsche.jpeg",
+    image: "philoimages/nietzsche.jpeg",
     profile: `
       <p><strong>기본 설명:</strong> RAUP는 기존 도덕과 가치에 반기를 들며, 삶의 의지와 창조적 본능을 강조합니다. 인간의 본성과 현실을 직시하고, 초인을 통해 새로운 가치를 창조하려 합니다.</p>
       <p><strong>철학 성향:</strong><br/>
@@ -137,7 +137,7 @@ const philosophers = {
   EIOT: {
     name: "라이프니츠",
     description: "무한한 가능세계 속 조화로운 질서를 설계하는 이성가.<br>『단자론』, 『인간지성신론』<br/>이 세계는 가능한 세계 중 최선이다. 모든 것은 이유가 있다.",
-    image: "philo_images/leibniz.jpeg",
+    image: "philoimages/leibniz.jpeg",
     profile: `
       <p><strong>기본 설명:</strong> EIOT는 이성적 사유와 수학적 논리를 통해 우주 만물의 조화와 질서를 추구합니다. 각각의 단자(모나드)는 독립적이면서도 전체의 조화 속에 존재하며, 최선의 세계라는 낙관적 신념을 갖고 있습니다.</p>
       <p><strong>철학 성향:</strong><br/>
@@ -154,7 +154,7 @@ const philosophers = {
   EIOP: {
     name: "아우구스티누스",
     description: "내면과 신의 세계를 잇는 영적 이상주의자. <br>『고백록』, 『신국론』<br/>진리는 내 안에 말씀하신다. 믿음은 이해를 낳는다.",
-    image: "philo_images/augustine.jpeg",
+    image: "philoimages/augustine.jpeg",
     profile: `
       <p><strong>기본 설명:</strong> EIOP는 경험적 삶에서 출발해 영적 진리를 찾으려 합니다. 특히 ‘내면의 목소리’를 통해 진리를 감지하고, 그것이 신과의 만남이라고 여깁니다. 철학은 인간의 죄성과 신의 은총을 이해하는 도구이며, 이성은 믿음을 위한 보조 수단일 뿐입니다.</p>
       <p><strong>철학 성향:</strong><br/>
@@ -171,7 +171,7 @@ const philosophers = {
   EIUT: {
     name: "쇼펜하우어",
     description: "의지의 세계를 바라보는 비관적 체계론자.<br>『의지와 표상으로서의 세계』, 『윤리학의 기초』<br/>의지가 곧 세계다. 고통은 인간의 본질이다.",
-    image: "philo_images/schopenhauer.jpeg",
+    image: "philoimages/schopenhauer.jpeg",
     profile: `
       <p><strong>기본 설명:</strong> EIUT는 인간 존재의 근원을 의지에서 찾으며, 세계를 비관적으로 바라봅니다. 고통의 근원을 분석하고, 예술과 윤리를 통해 구원을 모색합니다. 철학은 개인의 내면과 고통을 체계적으로 설명하는 도구입니다.</p>
       <p><strong>철학 성향:</strong><br/>
@@ -188,7 +188,7 @@ const philosophers = {
   EIUP: {
     name: "버클리",
     description: "“존재는 지각된다”는 독창적 주관주의자. <br>『인간지식의 원리』<br/>존재하는 것은 지각되는 것이다. 정신만이 실재한다.",
-    image: "philo_images/berkeley.jpeg",
+    image: "philoimages/berkeley.jpeg",
     profile: `
       <p><strong>기본 설명:</strong> EIUP는 모든 존재를 지각의 산물로 보며, 외부 세계의 객관성을 부정합니다. 경험과 내면의 감각을 통해 진리를 찾으며, 신의 존재를 통해 정신적 세계의 일관성을 확보합니다.</p>
       <p><strong>철학 성향:</strong><br/>
@@ -205,7 +205,7 @@ const philosophers = {
   EAOT: {
     name: "흄",
     description: "경험과 의심으로 진리를 비판하는 현실주의자. <br/>『인간 이해에 관한 탐구』<br/>습관이 이성을 지배한다. 인과는 상상에 불과하다.",
-    image: "philo_images/hume.jpeg",
+    image: "philoimages/hume.jpeg",
     profile: `
       <p><strong>기본 설명:</strong> EAOT는 경험적 관찰과 회의적 태도로 진리를 탐구합니다. 인간 이성과 본능의 한계를 인정하며, 인과와 자아, 종교에 대한 비판적 시각을 견지합니다.</p>
       <p><strong>철학 성향:</strong><br/>
@@ -222,7 +222,7 @@ const philosophers = {
   EAOP: {
     name: "초기 비트겐슈타인",
     description: "말로 할 수 없는 것을 존중하는 언어철학자. <br/>『논리철학논고』<br/>말할 수 없는 것에 대해선 침묵해야 한다. 내 언어의 한계가 내 세계의 한계다.",
-    image: "philo_images/early_wittgenstein.jpeg",
+    image: "philoimages/early_wittgenstein.jpeg",
     profile: `
       <p><strong>기본 설명:</strong> EAOP는 언어의 논리적 구조와 한계를 분석하며, 말로 할 수 없는 것의 중요성을 강조합니다. 세계는 언어의 한계 내에서만 설명 가능하다고 봅니다.</p>
       <p><strong>철학 성향:</strong><br/>
@@ -239,7 +239,7 @@ const philosophers = {
   EAUT: {
     name: "존 듀이",
     description: "경험과 실용으로 세상을 변화시키는 교육자. <br/>『경험과 자연』, 『민주주의와 교육』<br/>생각은 행동을 위한 도구다. 민주주의는 삶의 방식이다.",
-    image: "philo_images/dewey.jpeg",
+    image: "philoimages/dewey.jpeg",
     profile: `
       <p><strong>기본 설명:</strong> EAUT는 경험과 실용적 사고를 바탕으로 사회와 교육의 변화를 추구합니다. 이론보다는 실천, 추상보다는 구체적 문제 해결을 중시합니다.</p>
       <p><strong>철학 성향:</strong><br/>
@@ -256,7 +256,7 @@ const philosophers = {
   EAUP: {
     name: "장자",
     description: "자연의 흐름에 몸을 맡기는 자유로운 역설가. <br/>『장자』<br/>나비가 장자인가, 장자가 나비인가? 무위자연이 도다.",
-    image: "philo_images/zhuangzi.jpeg",
+    image: "philoimages/zhuangzi.jpeg",
     profile: `
       <p><strong>기본 설명:</strong> EAUP는 자연의 흐름과 변화에 자신을 맡기며, 인위적 구분과 집착을 넘어서려 합니다. 삶의 모순과 역설을 받아들이고, 자유로운 정신을 추구합니다.</p>
       <p><strong>철학 성향:</strong><br/>
