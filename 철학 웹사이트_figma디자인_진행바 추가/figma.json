@@ -1,0 +1,104 @@
+{
+    "name": "KSTI_Question_Card",
+    "type": "FRAME",
+    "children": [
+      {
+        "name": "질문 텍스트",
+        "type": "TEXT",
+        "characters": "다음 문항에 얼마나 동의하시나요?",
+        "style": {
+          "fontSize": 20,
+          "fontWeight": 600,
+          "fill": "#374151"
+        },
+        "layoutAlign": "STRETCH",
+        "constraints": { "horizontal": "MIN", "vertical": "MIN" }
+      },
+      {
+        "name": "선택지 그룹",
+        "type": "FRAME",
+        "layoutMode": "HORIZONTAL",
+        "primaryAxisAlignItems": "SPACE_BETWEEN",
+        "counterAxisAlignItems": "BOTTOM",
+        "itemSpacing": 16,
+        "children": [
+          {
+            "name": "매우 그렇다",
+            "type": "TEXT",
+            "characters": "매우 그렇다",
+            "style": {
+              "fontSize": 20,
+              "fontWeight": 700,
+              "fill": "#FFFFFF"
+            },
+            "backgroundColor": "#FDBA74",
+            "cornerRadius": 999,
+            "paddingLeft": 24,
+            "paddingRight": 24,
+            "paddingTop": 16,
+            "paddingBottom": 16,
+            "width": 140,
+            "height": 60
+          },
+          {
+            "name": "다소 그렇다",
+            "type": "TEXT",
+            "characters": "다소 그렇다",
+            "style": {
+              "fontSize": 16,
+              "fontWeight": 500,
+              "fill": "#FFFFFF"
+            },
+            "backgroundColor": "#FDBA74",
+            "cornerRadius": 999,
+            "paddingLeft": 20,
+            "paddingRight": 20,
+            "paddingTop": 12,
+            "paddingBottom": 12,
+            "width": 120,
+            "height": 48
+          },
+          {
+            "name": "다소 아니다",
+            "type": "TEXT",
+            "characters": "다소 아니다",
+            "style": {
+              "fontSize": 16,
+              "fontWeight": 500,
+              "fill": "#FFFFFF"
+            },
+            "backgroundColor": "#1E40AF",
+            "cornerRadius": 999,
+            "paddingLeft": 20,
+            "paddingRight": 20,
+            "paddingTop": 12,
+            "paddingBottom": 12,
+            "width": 120,
+            "height": 48
+          },
+          {
+            "name": "전혀 아니다",
+            "type": "TEXT",
+            "characters": "전혀 아니다",
+            "style": {
+              "fontSize": 20,
+              "fontWeight": 700,
+              "fill": "#FFFFFF"
+            },
+            "backgroundColor": "#1E40AF",
+            "cornerRadius": 999,
+            "paddingLeft": 24,
+            "paddingRight": 24,
+            "paddingTop": 16,
+            "paddingBottom": 16,
+            "width": 140,
+            "height": 60
+          }
+        ]
+      }
+    ],
+    "backgroundColor": "#FFFFFF",
+    "padding": 24,
+    "cornerRadius": 24,
+    "width": 600
+  }
