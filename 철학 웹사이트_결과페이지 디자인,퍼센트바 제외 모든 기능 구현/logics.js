@@ -139,7 +139,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const questionEl = document.createElement("div");
     questionEl.className = "question-text";
-    questionEl.textContent = `${questionText}`;
+    questionEl.innerHTML = questionText;
 
     const options = document.createElement("div");
     options.className = "radio-options";
@@ -164,7 +164,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const answeredCount = answers.filter(ans => ans !== undefined).length;
     const percent = Math.round((answeredCount / answers.length) * 100);
 
-    document.getElementById("progress-count").textContent = `${answeredCount} / ${answers.length}`;
     document.getElementById("progress-percent").textContent = `${percent}%`;
 
     const bar = document.getElementById("progress-bar");

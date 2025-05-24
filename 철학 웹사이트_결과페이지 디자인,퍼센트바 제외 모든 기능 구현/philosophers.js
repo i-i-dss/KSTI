@@ -222,7 +222,7 @@ const philosophers = {
   EAOP: {
     name: "초기 비트겐슈타인",
     description: "말로 할 수 없는 것을 존중하는 언어철학자. <br/>『논리철학논고』<br/>말할 수 없는 것에 대해선 침묵해야 한다. 내 언어의 한계가 내 세계의 한계다.",
-    image: "philoimages/wittgenstein.jpeg",
+    image: "philoimages/early_wittgenstein.jpeg",
     profile: `
       <p><strong>기본 설명:</strong> EAOP는 언어의 논리적 구조와 한계를 분석하며, 말로 할 수 없는 것의 중요성을 강조합니다. 세계는 언어의 한계 내에서만 설명 가능하다고 봅니다.</p>
       <p><strong>철학 성향:</strong><br/>

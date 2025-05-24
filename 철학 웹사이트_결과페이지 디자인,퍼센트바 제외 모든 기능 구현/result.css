@@ -1,1 +1,131 @@
-.
+/* result.css */
+
+/* 전체 컨테이너 */
+#result-container {
+  display: block;
+  padding: 40px;
+  background: #F5F5F5;
+  font-family: 'Noto Sans KR', sans-serif;
+  color: #222;
+}
+
+/* 결과 제목 */
+.result-title {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+/* 프로필 영역 */
+.result-profile {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.result-profile img {
+  width: 400px;
+  height: 300px;
+  border-radius: 25px;
+  object-fit: cover;
+  margin-bottom: 16px;
+}
+.result-name {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+.result-description {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 16px;
+  line-height: 1.5;
+}
+
+/* 버튼 */
+.nav-button {
+  display: inline-block;
+  background: #1E40AF;
+  color: #fff;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+  text-decoration: none;
+}
+.nav-button:hover {
+  background: #162f87;
+}
+.nav-button + .nav-button {
+  margin-left: 12px;
+}
+
+/* ───────── 차트 스타일 ───────── */
+
+/* 차트 래퍼 */
+.chart {
+  width: 100%;
+  margin: 0 auto 40px;
+}
+
+/* 한 줄(row) */
+.row {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+/* 좌/우 레이블 */
+.label-left,
+.label-right {
+  font-size: 18px;
+  line-height: 1.2;
+  white-space: nowrap;
+}
+.label-left {
+  text-align: right;
+  color: #1E40AF
+}
+.label-right {
+  text-align: left;
+  color: #FDBA74;
+}
+
+/* Percentage next to left label */
+.label-left .percent {
+  margin-left: 8px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #1E40AF;
+}
+
+/* Percentage next to right label */
+.label-right .percent {
+  margin-right: 8px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #FDBA74;
+}
+
+/* 막대 그래프 */
+.bar {
+  display: flex;
+  height: 24px;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #DDD;
+}
+
+/* 퍼센트 세그먼트 */
+.segment {
+  height: 100%;
+}
+.segment.left {
+  background: #1E40AF;
+}
+.segment.right {
+  background: #FDBA74;
+}
