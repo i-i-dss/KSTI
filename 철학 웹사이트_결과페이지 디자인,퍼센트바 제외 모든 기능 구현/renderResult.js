@@ -26,7 +26,7 @@ function renderResult(resultCode, scores) {
     R: ['R 이성적 사고', 'E 감정적 직관'],
     I: ['I 내면 중심', 'A 외부 반응'],
     O: ['O 객관적 사실', 'U 주관적 해석'],
-    T: ['T 체계적 구조', 'P 열쇠적 탐색']
+    T: ['T 체계적 구조', 'P 역설적 탐색']
   };
 
   // Build chart HTML
