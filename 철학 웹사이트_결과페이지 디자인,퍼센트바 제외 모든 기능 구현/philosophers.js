@@ -252,6 +252,7 @@ const philosophers = {
   },
   EAUT: {
     name: "존 듀이",
+    tag:" "
     description: "경험과 실용으로 세상을 변화시키는 교육자. <br/>『경험과 자연』, 『민주주의와 교육』<br/>생각은 행동을 위한 도구다. 민주주의는 삶의 방식이다.",
     image: "philoimages/dewey.jpeg",
     profile: `
@@ -269,6 +270,7 @@ const philosophers = {
   },
   EAUP: {
     name: "장자",
+    tag:" "
     description: "자연의 흐름에 몸을 맡기는 자유로운 역설가. <br/>『장자』<br/>나비가 장자인가, 장자가 나비인가? 무위자연이 도다.",
     image: "philoimages/zhuangzi.jpeg",
     profile: `
