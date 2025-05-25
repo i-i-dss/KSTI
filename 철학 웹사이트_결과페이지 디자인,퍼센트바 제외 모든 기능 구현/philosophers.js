@@ -1,6 +1,7 @@
 const philosophers = {
   RIOT: {
     name: "칸트",
+    tag: " ",
     description: "이성으로 세상의 도덕적 질서를 세우는 완성형 사상가. <br>『순수이성비판』, 『실천이성비판』<br/>“네 의지의 준칙이 언제나 동시에 보편적 입법의 원리가 되도록 행위하라.”<br/>“나는 알기 위해 믿는다。”<br/>",
     image: "philoimages/kant.jpeg",
     profile: `
@@ -17,6 +18,7 @@ const philosophers = {
   },
   RIOP: {
     name: "플라톤",
+    tag: " ",
     description: "현실에 이상을 비추는 체계적 이성주의자. <br>『국가』, 『파이돈』<br/>최선의 국가는 철학자가 다스린다. 진리는 이데아에 있다.",
     image: "philoimages/plato.jpeg",
     profile: `
@@ -34,6 +36,7 @@ const philosophers = {
   },
   RIUT: {
     name: "헤겔",
+    tag: " ",
     description: "변증법으로 역사를 통찰하는 철학의 거장. <br>『정신현상학』, 『논리학』<br/>이성적인 것은 현실적이고, 현실적인 것은 이성적이다. 정신은 자기 자신을 인식한다.",
     image: "philoimages/hegel.jpeg",
     profile: `
@@ -51,6 +54,7 @@ const philosophers = {
   },
   RIUP: {
     name: "키르케고르",
+    tag: " ",
     description: "신앙과 역설 속에서 진리를 찾는 개인주의자.<br>『두려움과 떨림』, 『죽음에 이르는 병』<br/>진리는 나 자신에게 있다. 신앙은 역설이다.",
     image: "philoimages/kierkegaard.jpeg",
     profile: `
@@ -68,6 +72,7 @@ const philosophers = {
   },
   RAOT: {
     name: "스피노자",
+    tag: " ",
     description: "자연과 신을 하나로 잇는 논리적 현실주의자. <br>『에티카』, 『신학정치론』<br/>신은 곧 자연이다. 모든 것은 필연적이다.",
     image: "philoimages/spinoza.jpeg",
     profile: `
@@ -85,6 +90,7 @@ const philosophers = {
   },
   RAOP: {
     name: "후기 비트겐슈타인",
+    tag: " ",
     description: "언어 속 진리의 한계를 탐구하는 현실주의 역설가. <br>『철학적 탐구』<br/>언어 게임을 보라. 의미는 사용에서 나온다.",
     image: "philoimages/laterwittgenstein.jpeg",
     profile: `
@@ -102,6 +108,7 @@ const philosophers = {
   },
   RAUT: {
     name: "데카르트",
+    tag: " ",
     description: "의심으로 존재를 확립하는 근대 철학의 아버지. <br>『성찰』, 『방법서설』<br/>나는 생각한다, 고로 존재한다. 명증성은 진리의 기준이다.",
     image: "philoimages/descartes.jpeg",
     profile: `
@@ -119,6 +126,7 @@ const philosophers = {
   },
   RAUP: {
     name: "니체",
+    tag: " ",
     description: "도덕을 넘어 초인을 꿈꾸는 반항적 현실주의자. <br>『차라투스트라』, 『도덕의 계보학』<br/>신은 죽었다. 너 자신이 되어라.",
     image: "philoimages/nietzsche.jpeg",
     profile: `
@@ -136,6 +144,7 @@ const philosophers = {
   },
   EIOT: {
     name: "라이프니츠",
+    tag: " ",
     description: "무한한 가능세계 속 조화로운 질서를 설계하는 이성가.<br>『단자론』, 『인간지성신론』<br/>이 세계는 가능한 세계 중 최선이다. 모든 것은 이유가 있다.",
     image: "philoimages/leibniz.jpeg",
     profile: `
@@ -153,6 +162,7 @@ const philosophers = {
   },
   EIOP: {
     name: "아우구스티누스",
+    tag: " ",
     description: "내면과 신의 세계를 잇는 영적 이상주의자. <br>『고백록』, 『신국론』<br/>진리는 내 안에 말씀하신다. 믿음은 이해를 낳는다.",
     image: "philoimages/augustine.jpeg",
     profile: `
@@ -170,6 +180,7 @@ const philosophers = {
   },
   EIUT: {
     name: "쇼펜하우어",
+    tag: " ",
     description: "의지의 세계를 바라보는 비관적 체계론자.<br>『의지와 표상으로서의 세계』, 『윤리학의 기초』<br/>의지가 곧 세계다. 고통은 인간의 본질이다.",
     image: "philoimages/schopenhauer.jpeg",
     profile: `
@@ -187,6 +198,7 @@ const philosophers = {
   },
   EIUP: {
     name: "버클리",
+    tag: " ",
     description: "“존재는 지각된다”는 독창적 주관주의자. <br>『인간지식의 원리』<br/>존재하는 것은 지각되는 것이다. 정신만이 실재한다.",
     image: "philoimages/berkeley.jpeg",
     profile: `
@@ -204,6 +216,7 @@ const philosophers = {
   },
   EAOT: {
     name: "흄",
+    tag: " ",
     description: "경험과 의심으로 진리를 비판하는 현실주의자. <br/>『인간 이해에 관한 탐구』<br/>습관이 이성을 지배한다. 인과는 상상에 불과하다.",
     image: "philoimages/hume.jpeg",
     profile: `
@@ -221,6 +234,7 @@ const philosophers = {
   },
   EAOP: {
     name: "초기 비트겐슈타인",
+    tag: " ",
     description: "말로 할 수 없는 것을 존중하는 언어철학자. <br/>『논리철학논고』<br/>말할 수 없는 것에 대해선 침묵해야 한다. 내 언어의 한계가 내 세계의 한계다.",
     image: "philoimages/early_wittgenstein.jpeg",
     profile: `
@@ -238,6 +252,7 @@ const philosophers = {
   },
   EAUT: {
     name: "존 듀이",
+    tag: " ",
     description: "경험과 실용으로 세상을 변화시키는 교육자. <br/>『경험과 자연』, 『민주주의와 교육』<br/>생각은 행동을 위한 도구다. 민주주의는 삶의 방식이다.",
     image: "philoimages/dewey.jpeg",
     profile: `
@@ -255,6 +270,7 @@ const philosophers = {
   },
   EAUP: {
     name: "장자",
+    tag: " ",
     description: "자연의 흐름에 몸을 맡기는 자유로운 역설가. <br/>『장자』<br/>나비가 장자인가, 장자가 나비인가? 무위자연이 도다.",
     image: "philoimages/zhuangzi.jpeg",
     profile: `
