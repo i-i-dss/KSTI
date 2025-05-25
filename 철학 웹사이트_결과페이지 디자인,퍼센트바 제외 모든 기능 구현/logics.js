@@ -173,6 +173,13 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   function renderQuestions() {
+    const introTop = document.querySelector('.intro-top');
+    if (currentPage === 0) {
+      introTop.style.display = 'block';
+    } else {
+      introTop.style.display = 'none';
+    }
+    
     container.innerHTML = "";
     const start = currentPage * QUESTIONS_PER_PAGE;
     const end = Math.min(start + QUESTIONS_PER_PAGE, questions.length);

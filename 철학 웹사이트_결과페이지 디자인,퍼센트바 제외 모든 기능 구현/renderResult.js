@@ -1,5 +1,7 @@
 function showResultPage() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
     document.getElementById("question-section").style.display = "none";
+    document.getElementById("progress-wrapper").style.display = "none";
     const resultContainer = document.getElementById("result-container");
     resultContainer.style.display = "block";
     resultContainer.innerHTML = `
@@ -38,18 +40,21 @@ function renderResult(resultCode, scores) {
     const total = score + oppScore;
     const percent = total ? Math.round((score / total) * 100) : 50;
     const oppPercent = 100 - percent;
+
     chartHtml += `
       <div class="row">
-        <span class="label-left">
-        ${labels[axis][0]}
-        <span class="label-left percent">${percent}%</span></span>
+        <div class="label-left-group">
+          <span class="label-left" style="${axis === "I" ? 'transform: translateX(5px); display: inline-block;' : ''}">${labels[axis][0]}</span>
+          <span class="percent">${percent}%</span>
+        </div>
         <div class="bar">
           <div class="segment left" style="width:${percent}%"></div>
-          <div class="segment right" style="width:${100 - percent}%"></div>
+          <div class="segment right" style="width:${oppPercent}%"></div>
         </div>
-        <span class="label-right">
-        <span class="label-right percent">${oppPercent}%</span>
-        ${labels[axis][1]}</span>
+        <div class="label-right-group">
+          <span class="label-right" style="${axis === "I" ? 'transform: translateX(-14px); display: inline-block;' : ''}">${labels[axis][1]}</span>
+          <span class="percent">${oppPercent}%</span>
+        </div>
       </div>`;
   });
   chartHtml += '</div>';
@@ -65,11 +70,3 @@ function renderResult(resultCode, scores) {
     </div>
   `;
 }
-
-{/* <div class="main-container">
-  <div class="profile-image-container">
-    <img src="profile.jpg" alt="프로필 이미지" class="profile-image">
-  </div>
-  <h1 class="main-title">pppp</h1>
-  <!-- 기타 요소들... -->
-</div> */}

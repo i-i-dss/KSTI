@@ -1,7 +1,6 @@
 const philosophers = {
   RIOT: {
     name: "칸트",
-    tag:" "
     description: "이성으로 세상의 도덕적 질서를 세우는 완성형 사상가. <br>『순수이성비판』, 『실천이성비판』<br/>“네 의지의 준칙이 언제나 동시에 보편적 입법의 원리가 되도록 행위하라.”<br/>“나는 알기 위해 믿는다。”<br/>",
     image: "philoimages/kant.jpeg",
     profile: `
@@ -18,7 +17,6 @@ const philosophers = {
   },
   RIOP: {
     name: "플라톤",
-    tag:" "
     description: "현실에 이상을 비추는 체계적 이성주의자. <br>『국가』, 『파이돈』<br/>최선의 국가는 철학자가 다스린다. 진리는 이데아에 있다.",
     image: "philoimages/plato.jpeg",
     profile: `
@@ -29,13 +27,13 @@ const philosophers = {
       • O (객관) - 진리는 이데아에 객관적으로 존재<br/>
       • P (역설) - 이데아와 현실의 긴장, 동굴의 비유</p>
       <p><strong>비슷한 철학자들:</strong> 피타고라스, 아우구스티누스, 칼 마르크스</p>
+      <!--<p><strong>자주 하는 말:</strong><br/>“최선의 국가는 철학자가 다스린다.”<br/>“진리는 이데아에 있다.”</p>-->
       <p><strong>주의할 점:</strong> 초월적 이상에 집착해 현실의 문제를 소홀히 할 수 있음</p>
       <p><strong>정리:</strong> 이성적 + 이상적 + 객관적 + 역설적 → “이상과 현실의 경계에서 진리를 찾는 철학자”</p>
     `
   },
   RIUT: {
     name: "헤겔",
-    tag:" "
     description: "변증법으로 역사를 통찰하는 철학의 거장. <br>『정신현상학』, 『논리학』<br/>이성적인 것은 현실적이고, 현실적인 것은 이성적이다. 정신은 자기 자신을 인식한다.",
     image: "philoimages/hegel.jpeg",
     profile: `
@@ -46,13 +44,13 @@ const philosophers = {
       • U (주관) - 의식의 내적 발전에 주목<br/>
       • T (통일) - 모순을 통합하는 거대한 체계 구축</p>
       <p><strong>비슷한 철학자들:</strong> 마르크스, 셸링, 화이트헤드</p>
+      <!--<p><strong>자주 하는 말:</strong><br/>“이성적인 것은 현실적이고, 현실적인 것은 이성적이다.”<br/>“정신은 자기 자신을 인식한다.”</p>-->
       <p><strong>주의할 점:</strong> 지나친 체계화가 구체적 현실을 왜곡할 수 있음</p>
       <p><strong>정리:</strong> 이성적 + 이상적 + 주관적 + 통일적 → “변증법으로 역사를 꿰뚫는 체계의 거장”</p>
     `
   },
   RIUP: {
     name: "키르케고르",
-    tag:" "
     description: "신앙과 역설 속에서 진리를 찾는 개인주의자.<br>『두려움과 떨림』, 『죽음에 이르는 병』<br/>진리는 나 자신에게 있다. 신앙은 역설이다.",
     image: "philoimages/kierkegaard.jpeg",
     profile: `
@@ -63,13 +61,13 @@ const philosophers = {
       • U (주관) - 개인의 내면과 실존적 결단 강조<br/>
       • P (역설) - 신앙의 역설과 실존의 모순 수용</p>
       <p><strong>비슷한 철학자들:</strong> 도스토옙스키, 하이데거, 바르트</p>
+      <!--<p><strong>자주 하는 말:</strong><br/>“진리는 나 자신에게 있다.”<br/>“신앙은 역설이다.”</p>-->
       <p><strong>주의할 점:</strong> 주관적 확신이 소통과 객관성을 저해할 수 있음</p>
       <p><strong>정리:</strong> 이성적 + 이상적 + 주관적 + 역설적 → “실존의 모순 속에서 진리를 찾는 개인주의자”</p>
     `
   },
   RAOT: {
     name: "스피노자",
-    tag:" "
     description: "자연과 신을 하나로 잇는 논리적 현실주의자. <br>『에티카』, 『신학정치론』<br/>신은 곧 자연이다. 모든 것은 필연적이다.",
     image: "philoimages/spinoza.jpeg",
     profile: `
@@ -80,13 +78,13 @@ const philosophers = {
       • O (객관) - 보편적 질서와 필연성 강조<br/>
       • T (통일) - 자연과 인간, 신의 통합적 체계</p>
       <p><strong>비슷한 철학자들:</strong> 라이프니츠, 데카르트, 아인슈타인</p>
+      <!--<p><strong>자주 하는 말:</strong><br/>“신은 곧 자연이다.”<br/>“모든 것은 필연적이다.”</p>-->
       <p><strong>주의할 점:</strong> 지나친 논리화가 인간 감정의 복잡성을 놓칠 수 있음</p>
       <p><strong>정리:</strong> 이성적 + 현실적 + 객관적 + 통일적 → “자연과 신을 하나로 보는 논리적 현실주의자”</p>
     `
   },
   RAOP: {
     name: "후기 비트겐슈타인",
-    tag:" "
     description: "언어 속 진리의 한계를 탐구하는 현실주의 역설가. <br>『철학적 탐구』<br/>언어 게임을 보라. 의미는 사용에서 나온다.",
     image: "philoimages/laterwittgenstein.jpeg",
     profile: `
@@ -97,13 +95,13 @@ const philosophers = {
       • O (객관) - 규칙과 의미의 객관적 규정<br/>
       • P (역설) - 언어의 한계와 역설적 상황 포용</p>
       <p><strong>비슷한 철학자들:</strong> 오스틴, 퀴네, 라일</p>
+      <!--<p><strong>자주 하는 말:</strong><br/>“언어 게임을 보라.”<br/>“의미는 사용에서 나온다.”</p>-->
       <p><strong>주의할 점:</strong> 지나친 언어 분석이 실제 삶의 문제를 놓칠 수 있음</p>
       <p><strong>정리:</strong> 이성적 + 현실적 + 객관적 + 역설적 → “언어의 한계에서 현실을 탐구하는 역설가”</p>
     `
   },
   RAUT: {
     name: "데카르트",
-    tag:" "
     description: "의심으로 존재를 확립하는 근대 철학의 아버지. <br>『성찰』, 『방법서설』<br/>나는 생각한다, 고로 존재한다. 명증성은 진리의 기준이다.",
     image: "philoimages/descartes.jpeg",
     profile: `
@@ -114,13 +112,13 @@ const philosophers = {
       • U (주관) - “나는 생각한다, 고로 존재한다”의 자기 중심성<br/>
       • T (통일) - 명확하고 분명한 진리 체계 구축</p>
       <p><strong>비슷한 철학자들:</strong> 라이프니츠, 스피노자, 후설</p>
+      <!--<p><strong>자주 하는 말:</strong><br/>“나는 생각한다, 고로 존재한다.”<br/>“명증성은 진리의 기준이다.”</p>-->
       <p><strong>주의할 점:</strong> 자기중심적 사유가 타인과의 관계를 소홀히 할 수 있음</p>
       <p><strong>정리:</strong> 이성적 + 현실적 + 주관적 + 통일적 → “의심에서 출발해 존재를 확립하는 근대의 사상가”</p>
     `
   },
   RAUP: {
     name: "니체",
-    tag:" "
     description: "도덕을 넘어 초인을 꿈꾸는 반항적 현실주의자. <br>『차라투스트라』, 『도덕의 계보학』<br/>신은 죽었다. 너 자신이 되어라.",
     image: "philoimages/nietzsche.jpeg",
     profile: `
@@ -131,13 +129,13 @@ const philosophers = {
       • U (주관) - 자기 극복과 개성의 강조<br/>
       • P (역설) - 영원회귀, 초인 등 역설적 개념 수용</p>
       <p><strong>비슷한 철학자들:</strong> 쇼펜하우어, 사르트르, 카뮈</p>
+      <!--<p><strong>자주 하는 말:</strong><br/>“신은 죽었다.”<br/>“너 자신이 되어라.”</p>-->
       <p><strong>주의할 점:</strong> 극단적 주관주의가 사회적 조화를 해칠 수 있음</p>
       <p><strong>정리:</strong> 이성적 + 현실적 + 주관적 + 역설적 → “초인을 꿈꾸는 반항적 현실주의자”</p>
     `
   },
   EIOT: {
     name: "라이프니츠",
-    tag:" "
     description: "무한한 가능세계 속 조화로운 질서를 설계하는 이성가.<br>『단자론』, 『인간지성신론』<br/>이 세계는 가능한 세계 중 최선이다. 모든 것은 이유가 있다.",
     image: "philoimages/leibniz.jpeg",
     profile: `
@@ -148,13 +146,13 @@ const philosophers = {
       • O (객관) - 우주의 질서를 수학적으로 설명<br/>
       • T (통일) - 다양한 현상을 하나의 체계로 통합</p>
       <p><strong>비슷한 철학자들:</strong> 데카르트, 스피노자, 볼프</p>
+      <!--<p><strong>자주 하는 말:</strong><br/>“이 세계는 가능한 세계 중 최선이다.”<br/>“모든 것은 이유가 있다.”</p>-->
       <p><strong>주의할 점:</strong> 지나친 낙관주의가 현실의 문제를 간과할 수 있음</p>
       <p><strong>정리:</strong> 경험적 + 이상적 + 객관적 + 통일적 → “가능세계의 조화를 설계하는 이성가”</p>
     `
   },
   EIOP: {
     name: "아우구스티누스",
-    tag:" "
     description: "내면과 신의 세계를 잇는 영적 이상주의자. <br>『고백록』, 『신국론』<br/>진리는 내 안에 말씀하신다. 믿음은 이해를 낳는다.",
     image: "philoimages/augustine.jpeg",
     profile: `
@@ -165,13 +163,13 @@ const philosophers = {
       • O (객관) - 신의 질서와 정의를 절대적 진리로 주장<br/>
       • P (역설) - 자유의지와 예정조화의 긴장을 껴안음</p>
       <p><strong>비슷한 철학자들:</strong> 플로티누스, 파스칼, 보나벤투라</p>
+      <!--<p><strong>자주 하는 말:</strong><br/>“진리는 내 안에 말씀하신다.”<br/>“믿음은 이해를 낳는다.”</p>-->
       <p><strong>주의할 점:</strong> 신앙적 확신이 논리적 토대를 무시할 수 있음</p>
       <p><strong>정리:</strong> 경험적 + 이상적 + 객관적 + 역설적 → “내면의 소리에서 신을 듣는 철학적 성자”</p>
     `
   },
   EIUT: {
     name: "쇼펜하우어",
-    tag:" "
     description: "의지의 세계를 바라보는 비관적 체계론자.<br>『의지와 표상으로서의 세계』, 『윤리학의 기초』<br/>의지가 곧 세계다. 고통은 인간의 본질이다.",
     image: "philoimages/schopenhauer.jpeg",
     profile: `
@@ -182,13 +180,13 @@ const philosophers = {
       • U (주관) - 내면의 의지와 욕망에 주목<br/>
       • T (통일) - 세계를 하나의 의지로 통합적 설명</p>
       <p><strong>비슷한 철학자들:</strong> 니체, 부처, 톨스토이</p>
+      <!--<p><strong>자주 하는 말:</strong><br/>“의지가 곧 세계다.”<br/>“고통은 인간의 본질이다.”</p>-->
       <p><strong>주의할 점:</strong> 지나친 비관주의가 삶의 긍정적 가능성을 제한할 수 있음</p>
       <p><strong>정리:</strong> 경험적 + 이상적 + 주관적 + 통일적 → “의지의 세계를 체계적으로 바라보는 비관적 철학자”</p>
     `
   },
   EIUP: {
     name: "버클리",
-    tag:" "
     description: "“존재는 지각된다”는 독창적 주관주의자. <br>『인간지식의 원리』<br/>존재하는 것은 지각되는 것이다. 정신만이 실재한다.",
     image: "philoimages/berkeley.jpeg",
     profile: `
@@ -199,13 +197,13 @@ const philosophers = {
       • U (주관) - “존재는 지각된다”라는 주관주의<br/>
       • P (역설) - 외부 세계의 존재와 인식의 역설</p>
       <p><strong>비슷한 철학자들:</strong> 흄, 데카르트, 플로티누스</p>
+      <!--<p><strong>자주 하는 말:</strong><br/>“존재하는 것은 지각되는 것이다.”<br/>“정신만이 실재한다.”</p>-->
       <p><strong>주의할 점:</strong> 극단적 주관주의가 소통과 과학적 설명을 어렵게 할 수 있음</p>
       <p><strong>정리:</strong> 경험적 + 이상적 + 주관적 + 역설적 → “존재는 지각된다는 독창적 주관주의자”</p>
     `
   },
   EAOT: {
     name: "흄",
-    tag:" "
     description: "경험과 의심으로 진리를 비판하는 현실주의자. <br/>『인간 이해에 관한 탐구』<br/>습관이 이성을 지배한다. 인과는 상상에 불과하다.",
     image: "philoimages/hume.jpeg",
     profile: `
@@ -216,13 +214,13 @@ const philosophers = {
       • O (객관) - 관찰과 실험의 객관성 강조<br/>
       • T (통일) - 경험적 자료의 일관된 분석</p>
       <p><strong>비슷한 철학자들:</strong> 버클리, 로크, 콩트</p>
+      <!--<p><strong>자주 하는 말:</strong><br/>“습관이 이성을 지배한다.”<br/>“인과는 상상에 불과하다.”</p>-->
       <p><strong>주의할 점:</strong> 지나친 회의주의가 확신과 신념의 토대를 약화시킬 수 있음</p>
       <p><strong>정리:</strong> 경험적 + 현실적 + 객관적 + 통일적 → “경험과 의심으로 진리를 비판하는 현실주의자”</p>
     `
   },
   EAOP: {
     name: "초기 비트겐슈타인",
-    tag:" "
     description: "말로 할 수 없는 것을 존중하는 언어철학자. <br/>『논리철학논고』<br/>말할 수 없는 것에 대해선 침묵해야 한다. 내 언어의 한계가 내 세계의 한계다.",
     image: "philoimages/early_wittgenstein.jpeg",
     profile: `
@@ -233,13 +231,13 @@ const philosophers = {
       • O (객관) - 논리적 분석과 명확한 규칙 강조<br/>
       • P (역설) - “말할 수 없는 것”의 역설적 중요성</p>
       <p><strong>비슷한 철학자들:</strong> 러셀, 프레게, 카르납</p>
+      <!--<p><strong>자주 하는 말:</strong><br/>“말할 수 없는 것에 대해선 침묵해야 한다.”<br/>“내 언어의 한계가 내 세계의 한계다.”</p>-->
       <p><strong>주의할 점:</strong> 지나친 논리주의가 인간 삶의 복합성을 축소할 수 있음</p>
       <p><strong>정리:</strong> 경험적 + 현실적 + 객관적 + 역설적 → “말로 할 수 없는 것을 존중하는 언어철학자”</p>
     `
   },
   EAUT: {
     name: "존 듀이",
-    tag:" "
     description: "경험과 실용으로 세상을 변화시키는 교육자. <br/>『경험과 자연』, 『민주주의와 교육』<br/>생각은 행동을 위한 도구다. 민주주의는 삶의 방식이다.",
     image: "philoimages/dewey.jpeg",
     profile: `
@@ -250,13 +248,13 @@ const philosophers = {
       • U (주관) - 개인의 성장과 창의성 중시<br/>
       • T (통일) - 경험과 실천의 연속성, 일관성 강조</p>
       <p><strong>비슷한 철학자들:</strong> 제임스, 피어스, 파피</p>
+      <!--<p><strong>자주 하는 말:</strong><br/>“생각은 행동을 위한 도구다.”<br/>“민주주의는 삶의 방식이다.”</p>-->
       <p><strong>주의할 점:</strong> 실용주의가 깊은 이론적 성찰을 소홀히 할 수 있음</p>
       <p><strong>정리:</strong> 경험적 + 현실적 + 주관적 + 통일적 → “경험과 실용으로 세상을 변화시키는 교육자”</p>
     `
   },
   EAUP: {
     name: "장자",
-    tag:" "
     description: "자연의 흐름에 몸을 맡기는 자유로운 역설가. <br/>『장자』<br/>나비가 장자인가, 장자가 나비인가? 무위자연이 도다.",
     image: "philoimages/zhuangzi.jpeg",
     profile: `
@@ -267,6 +265,7 @@ const philosophers = {
       • U (주관) - 각자의 삶과 관점의 자유 강조<br/>
       • P (역설) - 나비의 꿈, 물고기와 철학자의 역설적 일화</p>
       <p><strong>비슷한 철학자들:</strong> 노자, 소크라테스, 파르메니데스</p>
+      <!--<p><strong>자주 하는 말:</strong><br/>“나비가 장자인가, 장자가 나비인가?”<br/>“무위자연이 도다.”</p>-->
       <p><strong>주의할 점:</strong> 지나친 자유와 상대주의가 체계적 사고를 약화시킬 수 있음</p>
       <p><strong>정리:</strong> 경험적 + 현실적 + 주관적 + 역설적 → “자연의 흐름에 몸을 맡기는 자유로운 역설가”</p>
     `

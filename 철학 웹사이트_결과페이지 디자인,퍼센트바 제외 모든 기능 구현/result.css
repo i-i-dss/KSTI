@@ -2,11 +2,13 @@
 
 /* 전체 컨테이너 */
 #result-container {
-  display: block;
-  padding: 40px;
+  display: flex;
   background: #F5F5F5;
+  flex-direction: column;
+  width: 100%;
   font-family: 'Noto Sans KR', sans-serif;
   color: #222;
+  padding: 75px 0 0 0; /* 상단만 여백 주고 좌우·하단은 0 */
 }
 
 /* 결과 제목 */
@@ -14,7 +16,7 @@
   font-size: 2rem;
   font-weight: bold;
   text-align: center;
-  margin-bottom: 32px;
+  margin-bottom: 10px;
 }
 
 /* 프로필 영역 */
@@ -67,15 +69,42 @@
 .chart {
   width: 100%;
   margin: 0 auto 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /* 한 줄(row) */
 .row {
-  display: grid;
-  grid-template-columns: 1fr 3fr 1fr;
+  display: flex;
   align-items: center;
-  gap: 12px;
+  justify-content: space-between;
   margin-bottom: 24px;
+  width: 100%;
+  max-width: 900px;
+  margin-inline: auto;
+}
+
+.label-left-group,
+.label-right-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 130px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.3;
+  white-space: nowrap;
+}
+
+.label-left-group .percent {
+  color: #1E40AF;
+  font-weight: bold;
+}
+
+.label-right-group .percent {
+  color: #FDBA74;
+  font-weight: bold;
 }
 
 /* 좌/우 레이블 */
@@ -84,39 +113,48 @@
   font-size: 18px;
   line-height: 1.2;
   white-space: nowrap;
-}
-.label-left {
+  min-width: 100px;
   text-align: right;
-  color: #1E40AF
 }
-.label-right {
+
+.label-left {
+  color: #1E40AF;
   text-align: left;
+}
+
+.label-right {
   color: #FDBA74;
 }
 
-/* Percentage next to left label */
-.label-left .percent {
-  margin-left: 8px;
-  font-size: 18px;
+/* New container for percentages */
+.row-percent {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 400px;
+  font-size: 24px;
   font-weight: bold;
+  margin-top: -12px;
+  margin-bottom: 8px;
+}
+
+.row-percent .left {
   color: #1E40AF;
 }
 
-/* Percentage next to right label */
-.label-right .percent {
-  margin-right: 8px;
-  font-size: 18px;
-  font-weight: bold;
+.row-percent .right {
   color: #FDBA74;
 }
 
 /* 막대 그래프 */
 .bar {
-  display: flex;
+  flex: 1;
   height: 24px;
   border-radius: 12px;
   overflow: hidden;
   background: #DDD;
+  display: flex;
+  margin: 0 12px;
 }
 
 /* 퍼센트 세그먼트 */
