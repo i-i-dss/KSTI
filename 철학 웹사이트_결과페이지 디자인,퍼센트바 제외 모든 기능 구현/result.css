@@ -25,22 +25,26 @@
   margin-bottom: 40px;
 }
 .result-profile img {
-  width: 400px;
-  height: 300px;
+  width: 250px;
+  height: 200px;
   border-radius: 25px;
   object-fit: cover;
   margin-bottom: 16px;
 }
 .result-name {
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   font-weight: bold;
   margin-bottom: 8px;
 }
 .result-description {
-  font-size: 1rem;
+  font-size: 1.5rem;
   color: #555;
   margin-bottom: 16px;
   line-height: 1.5;
+}
+
+.result-description-profile {
+  font-size: 1.3rem;
 }
 
 /* 버튼 */
@@ -64,6 +68,21 @@
 }
 
 /* ───────── 차트 스타일 ───────── */
+
+.chart-wrapper {
+  width: 100%;
+  padding: 32px 0;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  border: 1px solid #ddd;
+  border-radius: 15px;
+}
+
+.chart-wrapper .chart {
+  width: 100%;
+  max-width: 900px;
+}
 
 /* 차트 래퍼 */
 .chart {

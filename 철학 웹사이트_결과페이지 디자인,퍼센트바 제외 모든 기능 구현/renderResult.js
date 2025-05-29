@@ -1,5 +1,7 @@
 function showResultPage() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
+    document.body.scrollTop = 0;
+document.documentElement.scrollTop = 0;
     document.getElementById("question-section").style.display = "none";
     document.getElementById("progress-wrapper").style.display = "none";
     const resultContainer = document.getElementById("result-container");
@@ -32,7 +34,7 @@ function renderResult(resultCode, scores) {
   };
 
   // Build chart HTML
-  let chartHtml = '<div class="chart">';
+  let chartHtml = '<div class="chart-wrapper"><div class="chart">';
   ['R','I','O','T'].forEach(axis => {
     const score = scores[axis] || 0;
     const opp = opposite[axis];
@@ -57,7 +59,7 @@ function renderResult(resultCode, scores) {
         </div>
       </div>`;
   });
-  chartHtml += '</div>';
+  chartHtml += '</div></div>';
 
   container.innerHTML = `
     <div class="result-title">당신의 철학 유형은?</div>
@@ -66,7 +68,7 @@ function renderResult(resultCode, scores) {
       <h2 class="result-name">${philosopher.name}</h2>
       <p class="result-description">${philosopher.description}</p>
       ${chartHtml}
-      <div class="result-analysis">${philosopher.profile}</div>
+      <div class="result-description-profile">${philosopher.profile}</div>
     </div>
   `;
 }
