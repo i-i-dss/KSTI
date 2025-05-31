@@ -123,7 +123,7 @@ const philosophers = {
   name: "후기 비트겐슈타인",
   tag: "언어 놀이, 일상적, 의미 사용론",
   description: "삶과 언어의 경계를 탐구한 언어철학의 거장. <br/>『철학적 탐구』<br/>말의 쓰임이 곧 철학이다.",
-  image: "philoimages/later_wittgenstein.jpeg",
+  image: "philoimages/laterwittgenstein.jpeg",
   profile: `
     <p><strong>기본 설명:</strong> RAOP 유형의 여러분은 삶과 철학을 일상적인 언어와 행동 속에서 찾아가는 후기 비트겐슈타인식 철학자입니다. 삶의 의미는 거창한 이론이 아닌 일상적이고 구체적인 언어와 행위 속에 있다고 믿습니다.</p>
     <p>복잡한 문제를 쉽게 풀어내는 능력을 가졌으며, 사람들과의 일상적 소통과 대화를 통해 삶을 이해합니다. 큰 목표나 이상보다, 현재의 삶에서 구체적인 의미를 찾습니다.</p>
