@@ -1,7 +1,7 @@
 const philosophers = {
   RIOT: {
     name: "칸트",
-    tag: " ",
+    tag: "의무 중시, 이성적, 형식적",
     description: "이성으로 세상의 도덕적 질서를 세우는 완성형 사상가. <br>『순수이성비판』, 『실천이성비판』<br/>“네 의지의 준칙이 언제나 동시에 보편적 입법의 원리가 되도록 행위하라.”<br/>“나는 알기 위해 믿는다。”<br/>",
     image: "philoimages/kant.jpeg",
     profile: `
@@ -20,7 +20,7 @@ const philosophers = {
   },
   RIOP: {
     name: "플라톤",
-    tag: " ",
+    tag: "이데아 지향, 조화 추구, 영혼 중심",
     description: "현실에 이상을 비추는 체계적 이성주의자. <br>『국가』, 『파이돈』<br/>최선의 국가는 철학자가 다스린다. 진리는 이데아에 있다.",
     image: "philoimages/plato.jpeg",
     profile: `
@@ -45,7 +45,7 @@ const philosophers = {
   },
   RIUT: {
     name: "헤겔",
-    tag: " ",
+    tag: "변증법적, 역사 의식적, 종합 지향",
     description: "변증법으로 역사를 통찰하는 철학의 거장. <br>『정신현상학』, 『논리학』<br/>이성적인 것은 현실적이고, 현실적인 것은 이성적이다. 정신은 자기 자신을 인식한다.",
     image: "philoimages/hegel.jpeg",
     profile: `
@@ -71,7 +71,7 @@ const philosophers = {
   },
   RIUP: {
     name: "키르케고르",
-    tag: " ",
+    tag: "실존 강조, 신앙적, 결단 중시",
     description: "신앙과 역설 속에서 진리를 찾는 개인주의자.<br>『두려움과 떨림』, 『죽음에 이르는 병』<br/>진리는 나 자신에게 있다. 신앙은 역설이다.",
     image: "philoimages/kierkegaard.jpeg",
     profile: `
@@ -96,7 +96,7 @@ const philosophers = {
   },
   RAOT: {
     name: "스피노자",
-    tag: " ",
+    tag: "일원론적, 자연애적, 필연성 강조",
     description: "자연과 신을 하나로 잇는 논리적 현실주의자. <br>『에티카』, 『신학정치론』<br/>신은 곧 자연이다. 모든 것은 필연적이다.",
     image: "philoimages/spinoza.jpeg",
     profile: `
@@ -121,7 +121,7 @@ const philosophers = {
   },
   RAOP: {
   name: "후기 비트겐슈타인",
-  tag: " ",
+  tag: "언어 놀이, 일상적, 의미 사용론",
   description: "삶과 언어의 경계를 탐구한 언어철학의 거장. <br/>『철학적 탐구』<br/>말의 쓰임이 곧 철학이다.",
   image: "philoimages/later_wittgenstein.jpeg",
   profile: `
@@ -141,7 +141,7 @@ const philosophers = {
 
 RAUT: {
   name: "데카르트",
-  tag: " ",
+  tag: "방법적, 의심 중심, 자아 확립",
   description: "모든 것을 의심하라. 철학의 출발점은 명석판명. <br/>『성찰』<br/>“나는 생각한다, 고로 존재한다.”",
   image: "philoimages/descartes.jpeg",
   profile: `
@@ -161,7 +161,7 @@ RAUT: {
 
 RAUP: {
   name: "니체",
-  tag: " ",
+  tag: "권력 지향, 도발적, 가치 전복적",
   description: "신은 죽었다. 새로운 가치를 창조하라. <br/>『차라투스트라는 이렇게 말했다』<br/>“괴물과 싸우는 자는 스스로 괴물이 되지 않도록 조심하라.”",
   image: "philoimages/nietzsche.jpeg",
   profile: `
@@ -181,7 +181,7 @@ RAUP: {
 
 EIOT: {
   name: "라이프니츠",
-  tag: " ",
+  tag: "모나드론적, 조화 낙관적, 논리적",
   description: "이 세상은 가능한 세계 중 가장 완전하다. <br/>『단자론』<br/>“악도 전체 조화 속에 포함된다.”",
   image: "philoimages/leibniz.jpeg",
   profile: `
@@ -200,7 +200,7 @@ EIOT: {
   },
   EIOP: {
   name: "아우구스티누스",
-  tag: " ",
+  tag: "내면 탐구, 은총 의존, 회심 경험",
   description: "내면의 빛으로 진리를 찾다. <br/>『고백록』<br/>“주여, 제가 당신을 알기 전에 당신은 제 안에 계셨습니다.”",
   image: "philoimages/augustine.jpeg",
   profile: `
@@ -220,7 +220,7 @@ EIOT: {
 
 EIUT: {
   name: "쇼펜하우어",
-  tag: " ",
+  tag: "비관적, 의지 중심, 고통 인식",
   description: "의지와 고통을 직시한 철학자. <br/>『의지와 표상으로서의 세계』<br/>“사는 것은 괴로움이다. 철학은 그것을 견디게 한다.”",
   image: "philoimages/schopenhauer.jpeg",
   profile: `
@@ -240,7 +240,7 @@ EIUT: {
 
 EIUP: {
   name: "버클리",
-  tag: " ",
+  tag: "관념론적, 지각 중시, 정신 우위",
   description: "존재하는 것은 지각되는 것이다. <br/>『인간 지식의 원리』<br/>“Esse est percipi.”",
   image: "philoimages/berkeley.jpeg",
   profile: `
@@ -260,7 +260,7 @@ EIUP: {
 
 EAOT: {
   name: "흄",
-  tag: " ",
+  tag: "경험주의적, 회의적, 습관 강조",
   description: "회의주의와 경험주의의 대가. <br/>『인간 본성에 관한 논고』<br/>습관이 인과를 만든다.",
   image: "philoimages/hume.jpeg",
   profile: `
@@ -280,7 +280,7 @@ EAOT: {
 
 EAOP: {
   name: "초기 비트겐슈타인",
-  tag: " ",
+  tag: "논리 분석적, 사실 지향, 언어 한계",
   description: "언어의 구조로 철학을 해명하다. <br/>『논리-철학 논고』<br/>“말할 수 없는 것은 침묵해야 한다.”",
   image: "philoimages/early_wittgenstein.jpeg",
   profile: `
@@ -300,7 +300,7 @@ EAOP: {
 
 EAUT: {
   name: "존 듀이",
-  tag: " ",
+  tag: "실용주의적, 경험 교육적, 문제 해결형",
   description: "삶 속에서 문제를 해결하는 실천적 철학자. <br/>『민주주의와 교육』<br/>배움은 곧 경험이다.",
   image: "philoimages/dewey.jpeg",
   profile: `
@@ -319,7 +319,7 @@ EAUT: {
   },
   EAUP: {
     name: "장자",
-    tag: " ",
+    tag: "무위 자연, 자유 유희, 경계 초월",
     description: "자연의 흐름에 몸을 맡기는 자유로운 역설가. <br/>『장자』<br/>나비가 장자인가, 장자가 나비인가? 무위자연이 도다.",
     image: "philoimages/zhuangzi.jpeg",
     profile: `
