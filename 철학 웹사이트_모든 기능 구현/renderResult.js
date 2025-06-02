@@ -10,8 +10,11 @@ function preloadAxisImages() {
 function handleShare() {
   const url = window.location.href;
 
-  if (navigator.share) {
-    // 모바일 네이티브 공유
+  // 모바일 또는 태블릿인지 판단
+  const isMobileOrTablet = /Android|iPhone|iPad|iPod|Mobile|Tablet|LG|SM-|SCH-|SHV-|SHW-|GT-|KFOT|Silk|Kindle|iPadOS/i.test(navigator.userAgent);
+
+  if (navigator.share && isMobileOrTablet) {
+    // 네이티브 공유 UI 실행 (모바일/태블릿)
     navigator.share({
       title: "철학 MBTI 결과",
       url: url
@@ -19,7 +22,7 @@ function handleShare() {
       console.log("공유 실패 또는 취소:", err);
     });
   } else {
-    // fallback: 클립보드 복사
+    // fallback: 복사
     navigator.clipboard.writeText(url)
       .then(() => alert("링크가 복사되었습니다!"))
       .catch(() => alert("복사에 실패했습니다. 다시 시도해주세요."));
