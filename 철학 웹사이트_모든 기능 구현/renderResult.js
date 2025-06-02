@@ -7,6 +7,24 @@ function preloadAxisImages() {
   });
   
 }
+function handleShare() {
+  const url = window.location.href;
+
+  if (navigator.share) {
+    // 모바일 네이티브 공유
+    navigator.share({
+      title: "철학 MBTI 결과",
+      url: url
+    }).catch((err) => {
+      console.log("공유 실패 또는 취소:", err);
+    });
+  } else {
+    // fallback: 클립보드 복사
+    navigator.clipboard.writeText(url)
+      .then(() => alert("링크가 복사되었습니다!"))
+      .catch(() => alert("복사에 실패했습니다. 다시 시도해주세요."));
+  }
+}
 
 function showResultPage() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -20,7 +38,7 @@ function showResultPage() {
       <div id="resultContent"></div>
       <div class="text-center mt-6" style="display: flex; justify-content: center; gap: 16px;">
         <button onclick="location.reload()" class="nav-button">처음부터 다시 하기</button>
-        <button onclick="navigator.clipboard.writeText(window.location.href); alert('링크가 복사되었습니다!');" class="nav-button">공유하기</button>
+        <button onclick="handleShare()" class="nav-button">공유하기</button>
       </div>
     `;
   
