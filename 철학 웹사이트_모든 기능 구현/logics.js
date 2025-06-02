@@ -1,10 +1,17 @@
 document.addEventListener("DOMContentLoaded", () => {
-  function preloadPhilosopherImages() {
-    Object.values(philosophers).forEach(philo => {
-      const img = new Image();
-      img.src = philo.image;
-    });
-  }
+  function preloadImagesWithLinkTag() {
+  Object.values(philosophers).forEach(philo => {
+    const link = document.createElement("link");
+    link.rel = "preload";
+    link.as = "image";
+    link.href = philo.image;
+    document.head.appendChild(link);
+  });
+}
+
+  document.addEventListener("DOMContentLoaded", () => {
+  preloadImagesWithLinkTag();
+});
 
   const container = document.getElementById("question-container");
   const nextBtn = document.getElementById("next-button");
@@ -227,8 +234,8 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   
     if (end >= answers.length) {
-      calculateResult();     // ✅ 점수 계산 및 저장은 여기서 딱 1번만
-      showResultPage();      // ✅ 결과는 저장된 데이터 기반으로만 렌더링
+      calculateResult();     //  점수 계산 및 저장은 여기서 딱 1번만
+      showResultPage();      //  결과는 저장된 데이터 기반으로만 렌더링
     } else {
       currentPage++;
       renderQuestions();
@@ -244,5 +251,4 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   renderQuestions();
-  preloadPhilosopherImages();
 });
