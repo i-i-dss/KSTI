@@ -42,11 +42,13 @@ document.addEventListener("DOMContentLoaded", () => {
       const textYes = document.createElement("span");
       textYes.className = "radio-text";
       textYes.textContent = "그렇다";
+      textYes.style.color = "#1E40AF";
       label.appendChild(textYes);
     } else if (className === "big-E") {
       const textNo = document.createElement("span");
       textNo.className = "radio-text";
       textNo.textContent = "아니다";
+      textNo.style.color = "#FDBA74";
       label.appendChild(textNo);
     }
 
