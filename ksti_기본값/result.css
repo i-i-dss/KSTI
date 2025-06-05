@@ -1,0 +1,227 @@
+/* 전체 컨테이너 */
+#result-container {
+  display: flex;
+  background: #ffffff;
+  flex-direction: column;
+  width: 100%;
+  font-family: 'Noto Sans KR', sans-serif;
+  color: #222;
+  padding: 75px 0 0 0; /* 상단만 여백 주고 좌우·하단은 0 */
+}
+
+/* 결과 제목 */
+.result-title {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+/* 배경 컨테이너: 프로필 상단 영역을 감싸는 컨테이너 */
+.profile-background {
+  width: 100%;
+  background-color: #F0F4FF; /* 연한 파란색 배경 */
+  padding: 24px 0;
+  border-radius: 15px;
+  border: 1px solid #ddd;
+  margin-bottom: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.result-profile {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.result-profile img {
+  width: 250px;
+  height: 200px;
+  border-radius: 25px;
+  object-fit: cover;
+  margin-bottom: 16px;
+}
+.result-name {
+  font-size: 1.7rem;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+.result-description {
+  font-size: 1.5rem;
+  color: #555;
+  margin-bottom: 16px;
+  line-height: 1.5;
+}
+.result-description-text{
+  font-size: 1.3rem;
+}
+.result-description-profile {
+  font-size: 1rem;
+}
+
+/* 버튼 */
+.nav-button {
+  display: inline-block;
+  background: #1E40AF;
+  color: #fff;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+  text-decoration: none;
+}
+.nav-button:hover {
+  background: #162f87;
+}
+.nav-button + .nav-button {
+  margin-left: 12px;
+}
+
+/* ───────── 차트 스타일 ───────── */
+
+.ksti-outer-card {
+  max-width: 420px;
+  width: 100%;
+  margin: 24px auto;
+  background: #fff;
+  border-radius: 22px;
+  box-shadow: 0 4px 20px #0001;
+  padding: 18px 10px 20px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 16px;
+}
+
+/* Divider and section styles below the .ksti-outer-card */
+.ksti-divider {
+  height: 1px;
+  background: #ddd;
+  margin: 16px 0;
+  width: 100%;
+  opacity: 0.6;
+}
+
+.result-tag {
+  font-size: 1.35rem;
+  color: #666;
+  text-align: center;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+.profile-section,
+.result-description-text,
+.others-section,
+.caut-section,
+.desc-panel {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.6;
+  padding: 0 10px;
+}
+.axis-card {
+  background: #f5f6fa;
+  border-radius: 13px;
+  padding: 15px 10px 11px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  min-width: 0;
+  position: relative;
+  cursor: pointer;
+  margin-bottom: 0;
+  box-shadow: 0 1.5px 7px #0001;
+  transition: box-shadow 0.3s ease;
+}
+.axis-card:hover {
+  box-shadow: 0 4px 12px #0003;
+}
+
+.axis-labels {
+  width: 100%; display: flex; justify-content: space-between; align-items: center; margin-bottom: 7px;
+}
+.axis-labels span {font-size: 1.07em; font-weight: 600;}
+.axis-bar {
+  position: relative;
+  width: 100%;
+  height: 20px;
+  background: var(--color, #ddd);
+  border-radius: 13px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 7px;
+}
+.axis-bar .center-line {
+  position: absolute;
+  top: 0; left: 50%;
+  width: 2.5px; height: 100%;
+  background: #fff;
+  opacity: 0.5;
+  z-index: 2;
+  transform: translateX(-50%);
+}
+.axis-bar .point {
+  position: absolute;
+  top: 50%;
+  left: calc(var(--point-pos, 50) * 1%);
+  transform: translate(-50%, -50%);
+  background: #fff; border: 3px solid #333;
+  border-radius: 50%;
+  width: 29px; height: 29px;
+  box-shadow: 0 2px 8px #0002;
+  z-index: 3;
+  display: flex; align-items: center; justify-content: center;
+  font-weight: 700; font-size: 9px; color: #333;
+  transition: left .6s cubic-bezier(.8,0,.18,1);
+  /* 절대 잘리지 않도록 바 안에서만 표시 */
+  box-sizing: border-box;
+  pointer-events: none;
+}
+
+.axis-card .percent-labels {
+  width: 100%; display: flex; justify-content: space-between;
+  font-size: 13px; color: #888;
+  margin-top: -2px;
+}
+
+.desc-panel {
+  margin-top: 10px;
+  background: #f7fafd;
+  border-radius: 16px;
+  min-height: 124px;
+  min-width: 0;
+  padding: 20px 14px 10px 14px;
+  box-shadow: 0 2px 7px #0001;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 7px;
+  word-break: keep-all;
+  white-space: normal;
+  overflow-wrap: break-word;
+}
+.desc-img {
+  width: 70px; height: 70px;
+  border-radius: 15px;
+  object-fit: cover;
+  margin-bottom: 10px;
+  background: #eee;
+  box-shadow: 0 1px 5px #0001;
+}
+.desc-title { font-size: 1.13em; font-weight: 700; margin-bottom: 3px;}
+.desc-pct   { font-size: 1em; font-weight: 500; color: #2aa97c; margin-bottom: 8px;}
+.desc-txt   { font-size: 1em; color: #303030; word-break: keep-all;}
+
+.profile-section,
+.result-description-text,
+.others-section,
+.caut-section,
+.desc-panel {
+  word-break: keep-all !important;
+  white-space: normal !important;
+  overflow-wrap: break-word !important;
+}

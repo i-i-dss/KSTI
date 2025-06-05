@@ -1,0 +1,371 @@
+/* 기본 설정 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  margin-bottom: 70px;
+}
+
+
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 35px; /* Added space below fixed header */
+}
+
+.header-bar {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 45px;
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0);
+  z-index: 1000;
+}
+
+.logo-image {
+  height: 38px;
+}
+
+.insta-icon {
+  width: 35px;
+  height: 35px;
+  object-fit: contain; /* 비율 유지하며 잘 맞추기 */
+  cursor: pointer;
+}
+
+.intro-top {
+  width: 100%;
+  height: 500px;
+  background-color: #F6F2E7;
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.intro-header {
+  text-align: center;
+  padding-top: 45px;
+}
+
+.intro-subtitle {
+  font-size: 16px;
+  font-weight: 400;
+  color: #374151;
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 30px;
+}
+
+.intro-card {
+  display: flex;
+  align-items: center;
+  background-color: #f0f0f0;
+  border-radius: 16px;
+  padding: 20px;
+  margin: 12px auto;
+  width: 90%;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  gap: 16px;
+}
+
+.intro-icons {
+  font-size: 28px;
+  flex-shrink: 0;
+}
+
+.intro-text {
+  font-size: 16px;
+  color: #333;
+  line-height: 1.4;
+}
+.intro-top > .intro-card {
+  width: 90%;
+  height: 100px;
+  background-color: #f0f0f0;
+  border-radius: 12px;
+  margin: 12px auto;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.full-width {
+  width: 100%;
+  margin: 0
+}
+
+.question-page {
+  width: 90vw;
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#result-container .question-page {
+  margin-bottom: 0;
+}
+
+.question-frame {
+  width: 100%;
+  padding: 20px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px; /* gap for better spacing between questions and button*/
+}
+
+.question-text {
+  font-size: 20px;
+  font-weight: 400;
+  color: #000;
+  text-align: center;
+  line-height: 1.2;
+  margin-bottom: 0.5rem;
+}
+
+.divider {
+  width: 85%;
+  height: 1px;
+  background: linear-gradient(to right, rgba(70, 70, 66, 0), #464642 40%, #464642 60%, rgba(70, 70, 66, 0));
+  opacity: 0.5;
+  margin: 18px auto;
+}
+
+
+/* 라디오 버튼 정렬 */
+
+input[type="radio"] {
+  opacity: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  z-index: 2;
+}
+
+
+.radio-options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 0.5rem;
+  width: 90%;
+}
+
+.radio-option {
+  position: relative;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.radio-circle {
+  display: inline-block;
+  border-radius: 50%;
+  background-color: #FFF;
+  transition: all 0.2s;
+}
+
+.radio-option.big-R .radio-circle {
+  width: 45px;
+  height: 45px;
+  border: 2px solid #1E40AF;
+}
+
+.radio-option.small-R .radio-circle {
+  width: 35px;
+  height: 35px;
+  border: 2px solid #1E40AF;
+}
+
+.radio-option.big-E .radio-circle {
+  width: 45px;
+  height: 45px;
+  border: 2px solid #FDBA74;
+}
+
+.radio-option.small-E .radio-circle {
+  width: 35px;
+  height: 35px;
+  border: 2px solid #FDBA74;
+}
+
+/* 공통 선택 시 효과 틀 유지 */
+.radio-option.selected .radio-circle {
+  transition: background-color 0.3s ease;
+}
+
+/* R 유형 (파란색 채움) */
+.radio-option.selected.big-R .radio-circle,
+.radio-option.selected.small-R .radio-circle {
+  background-color: #1E40AF; /* RIOT 색 */
+}
+
+/* E 유형 (주황색 채움) */
+.radio-option.selected.big-E .radio-circle,
+.radio-option.selected.small-E .radio-circle {
+  background-color: #FDBA74; /* EAUP 색 */
+}
+
+
+.radio-circle-svg {
+  cursor: pointer;
+}
+
+.radio-circle-bg {
+  fill: none;
+  stroke: #ccc;
+  stroke-width: 2;
+}
+
+/* Removed the general hover rule with neutral gray background */
+/* Added individual hover rules for R and E types */
+.radio-option.small-R:hover .radio-circle,
+.radio-option.big-R:hover .radio-circle {
+  background-color: #1E40AF; /* RIOT 계열 hover */
+}
+
+.radio-option.small-E:hover .radio-circle,
+.radio-option.big-E:hover .radio-circle {
+  background-color: #FDBA74; /* EAUP 계열 hover */
+}
+
+.radio-text {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 12px !important;
+  font-size: 0.75rem;
+  color: #444;
+  white-space: nowrap;
+  text-align: center;
+}
+
+.radio-option.big-R,
+.radio-option.big-E {
+  width: auto;
+}
+
+
+
+/* 진행 표시 */
+.ellipse-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.ellipse {
+  border-radius: 50%;
+  background-color: #D9D9D9;
+}
+
+.ellipse.big-R {
+  width: 34px;
+  height: 34px;
+  background-color: #1E40AF;
+}
+.ellipse.small-R {
+  width: 24px;
+  height: 24px;
+  background-color: #1E40AF;
+}
+.ellipse.small-E {
+  width: 24px;
+  height: 24px;
+  background-color: #FDBA74;
+}
+.ellipse.big-E {
+  width: 34px;
+  height: 34px;
+  background-color: #FDBA74;
+}
+
+.blurred {
+  opacity: 0.3;
+  transition: opacity 0.3s ease;
+}
+
+/* 진행률 고정 바 */
+.progress-container {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #f3f3f3;
+  padding: 0.5rem 1rem;
+  box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.05);
+  z-index: 999;
+}
+
+/* 진행률 상태 텍스트 */
+.progress-status {
+  text-align: center;
+  font-size: 0.9rem;
+  margin-bottom: 0.25rem;
+}
+
+/* 바틀랩 */
+.progress-wrapper {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  height: 9px;
+  background-color: #ddd;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+/* 진행률 바 */
+.progress-bar {
+  height: 100%;
+  background-color: #6366f1;
+  width: 0%;
+  transition: width 0.3s ease-in-out;
+}
+
+/* 라디오 옵션 행 좌우 레이블 및 중앙 정렬 */
+.radio-options {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 95%;
+}
+
+.radio-label-left,
+.radio-label-right {
+  font-size: 14px;
+  color: #444;
+  white-space: nowrap;
+}
+
+.radio-set {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
